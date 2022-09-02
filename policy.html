@@ -14,14 +14,15 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css" />
     <link rel="stylesheet" href="css/nouislider.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-form-styler@2.0.2/dist/jquery.formstyler.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-form-styler@2.0.2/dist/jquery.formstyler.theme.min.css ">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-form-styler@2.0.2/dist/jquery.formstyler.theme.min.css "> 
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <header class="header margin-bottom">
+
+    <header class="header">
         <div class="container">
             <div class="header-top">
                 <div class="header-nav">
@@ -55,7 +56,7 @@
                 </div>
                 <div class="header-mode header-mode__items">
                     <div class="header-mode__item item-lang-wrapper">
-                        <select class="header-mode__item mode-item-lang" name="header-mode__item " id="header-mode__item ">
+                        <select class="header-mode__item mode-item-lang">
                             <option class="header-mode__lang header-mode__lang-ru" value="" selected>RU</option>
                             <option class="header-mode__lang header-mode__lang-ro">RO</option>
                             <option class="header-mode__lang header-mode__lang-en">EN</option>
@@ -69,47 +70,49 @@
             <div class="header-bottom">
                 <nav class="header-bottom__menu">
                     <div class="header-bottom__search">
+                        <!-- <input class="header-bottom__btn" type="submit"> -->
                         <img class="header-bottom__btn-img" src="images/search.svg" alt="">
+                        <!-- </input> -->
                         <input class="header-bottom__input" type="text">
                     </div>
                     <ul class="header-bottom__items">
                         <li class="header-bottom__item">
-                            <a href="about.html" class="header-bottom__link">
+                            <a href="#" class="header-bottom__link">
                                 Гипсокартон
                             </a>
                         </li>
                         <li class="header-bottom__item">
-                            <a href="blog.html" class="header-bottom__link">
+                            <a href="#" class="header-bottom__link">
                                 Клей
                             </a>
                         </li>
                         <li class="header-bottom__item">
-                            <a href="catalog.html" class="header-bottom__link">
+                            <a href="#" class="header-bottom__link">
                                 Штукатурка
                             </a>
                         </li>
                         <li class="header-bottom__item">
-                            <a href="company.html" class="header-bottom__link">
+                            <a href="#" class="header-bottom__link">
                                 Шпатлевка
                             </a>
                         </li>
                         <li class="header-bottom__item">
-                            <a href="contacts.html" class="header-bottom__link">
+                            <a href="#" class="header-bottom__link">
                                 Термоизоляция
                             </a>
                         </li>
                         <li class="header-bottom__item">
-                            <a href="delivery.html" class="header-bottom__link">
+                            <a href="#" class="header-bottom__link">
                                 Вентиляция
                             </a>
                         </li>
                         <li class="header-bottom__item">
-                            <a href="news.html" class="header-bottom__link">
+                            <a href="#" class="header-bottom__link">
                                 Комплектующие
                             </a>
                         </li>
                         <li class="header-bottom__item">
-                            <a href="order.html" class="header-bottom__link">
+                            <a href="#" class="header-bottom__link">
                                 Аксессуары
                             </a>
                         </li>
@@ -135,142 +138,115 @@
                 </ul>
             </div>
             <div class="bascket-wrapper">
-                <div class="bascket-wrapper__inner">
-                    <div class="bascket__container">
-                        <div class="bascket__head">
-                            <p class="bascket__head-title">Корзина</p>
-                            <button class="bascket__head-btn"></button>
+                <div class="bascket__container ">
+                    <div class="bascket__head">
+                        <p class="bascket__head-title">Корзина</p>
+                        <button class="bascket__head-btn"></button>
+                    </div>
+                    <ul id="bascket__items" class="bascket__items ">
+                        <li class="bascket__item ">
+                            <img class="bascket__item-image " src="images/bascket-product.png ">
+                            <div class="bascket__item-text ">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </div>
+                            <div class="bascket__item-select "></div>
+                            <div class="bascket__item-quantity ">
+                                <button class="bascket__minus-btn " type="button " name="button ">
+                                    <img src="images/minus.svg " alt=" " />
+                                </button>
+                                <input type="text " name="name " value="1 ">
+                                <button class="bascket__plus-btn " type="button " name="button ">
+                                    <img src="images/plus.svg " alt=" " />
+                                </button>
+                            </div>
+                            <div class="bascket__item-price ">9900 лей</div>
+
+                            <button class="bascket__item-delete "></button>
+                        </li>
+                        <li class="bascket__item ">
+                            <img class="bascket__item-image " src="images/bascket-product.png ">
+                            <div class="bascket__item-text ">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </div>
+                            <div class="bascket__item-select "></div>
+                            <div class="bascket__item-quantity ">
+                                <button class="bascket__minus-btn " type="button " name="button ">
+                                    <img src="images/minus.svg " alt=" " />
+                                </button>
+                                <input type="text " name="name " value="1 ">
+                                <button class="bascket__plus-btn " type="button " name="button ">
+                                    <img src="images/plus.svg " alt=" " />
+                                </button>
+                            </div>
+                            <div class="bascket__item-price ">9900 лей</div>
+
+                            <button class="bascket__item-delete "></button>
+                        </li>
+                        <li class="bascket__item ">
+                            <img class="bascket__item-image " src="images/bascket-product.png ">
+                            <div class="bascket__item-text ">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </div>
+                            <div class="bascket__item-select "></div>
+                            <div class="bascket__item-quantity ">
+                                <button class="bascket__minus-btn " type="button " name="button ">
+                                    <img src="images/minus.svg " alt=" " />
+                                </button>
+                                <input type="text " name="name " value="1 ">
+                                <button class="bascket__plus-btn " type="button " name="button ">
+                                    <img src="images/plus.svg " alt=" " />
+                                </button>
+                            </div>
+                            <div class="bascket__item-price ">9900 лей</div>
+
+                            <button class="bascket__item-delete "></button>
+                        </li>
+                        <li class="bascket__item ">
+                            <img class="bascket__item-image " src="images/bascket-product.png ">
+                            <div class="bascket__item-text ">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </div>
+                            <div class="bascket__item-select "></div>
+                            <div class="bascket__item-quantity ">
+                                <button class="bascket__minus-btn " type="button " name="button ">
+                                    <img src="images/minus.svg " alt=" " />
+                                </button>
+                                <input type="text " name="name " value="1 ">
+                                <button class="bascket__plus-btn " type="button " name="button ">
+                                    <img src="images/plus.svg " alt=" " />
+                                </button>
+                            </div>
+                            <div class="bascket__item-price ">9900 лей</div>
+
+                            <button class="bascket__item-delete "></button>
+                        </li>
+                    </ul>
+                    <div class="bascket-total">
+                        <div class="bascket-total__text">
+                            <p>Общая сумма: 30 600 лей</p>
+                            <p>Скидка: -900 лей</p>
+                            <p>Доставка: 60 лей</p>
                         </div>
-                        <ul id="bascket__items" class="bascket__items ">
-                            <li class="bascket__item ">
-                                <img class="bascket__item-image " src="images/bascket-product.png ">
-                                <div class="bascket__item-text ">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                    elit.
-                                </div>
-                                <div class="bascket__item-select "></div>
-                                <div class="bascket__item-quantity ">
-                                    <button class="bascket__minus-btn " type="button " name="button ">
-                                        <img src="images/minus.svg " alt=" " />
-                                    </button>
-                                    <input type="text " name="name " value="1 ">
-                                    <button class="bascket__plus-btn " type="button " name="button ">
-                                        <img src="images/plus.svg " alt=" " />
-                                    </button>
-                                </div>
-                                <div class="bascket__item-price ">9900 лей</div>
-
-                                <button class="bascket__item-delete "></button>
-                            </li>
-                            <li class="bascket__item ">
-                                <img class="bascket__item-image " src="images/bascket-product.png ">
-                                <div class="bascket__item-text ">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                    elit.
-                                </div>
-                                <div class="bascket__item-select "></div>
-                                <div class="bascket__item-quantity ">
-                                    <button class="bascket__minus-btn " type="button " name="button ">
-                                        <img src="images/minus.svg " alt=" " />
-                                    </button>
-                                    <input type="text " name="name " value="1 ">
-                                    <button class="bascket__plus-btn " type="button " name="button ">
-                                        <img src="images/plus.svg " alt=" " />
-                                    </button>
-                                </div>
-                                <div class="bascket__item-price ">9900 лей</div>
-
-                                <button class="bascket__item-delete "></button>
-                            </li>
-                            <li class="bascket__item ">
-                                <img class="bascket__item-image " src="images/bascket-product.png ">
-                                <div class="bascket__item-text ">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                    elit.
-                                </div>
-                                <div class="bascket__item-select "></div>
-                                <div class="bascket__item-quantity ">
-                                    <button class="bascket__minus-btn " type="button " name="button ">
-                                        <img src="images/minus.svg " alt=" " />
-                                    </button>
-                                    <input type="text " name="name " value="1 ">
-                                    <button class="bascket__plus-btn " type="button " name="button ">
-                                        <img src="images/plus.svg " alt=" " />
-                                    </button>
-                                </div>
-                                <div class="bascket__item-price ">9900 лей</div>
-
-                                <button class="bascket__item-delete "></button>
-                            </li>
-                            <li class="bascket__item ">
-                                <img class="bascket__item-image " src="images/bascket-product.png ">
-                                <div class="bascket__item-text ">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                    elit.
-                                </div>
-                                <div class="bascket__item-select "></div>
-                                <div class="bascket__item-quantity ">
-                                    <button class="bascket__minus-btn " type="button " name="button ">
-                                        <img src="images/minus.svg " alt=" " />
-                                    </button>
-                                    <input type="text " name="name " value="1 ">
-                                    <button class="bascket__plus-btn " type="button " name="button ">
-                                        <img src="images/plus.svg " alt=" " />
-                                    </button>
-                                </div>
-                                <div class="bascket__item-price ">9900 лей</div>
-
-                                <button class="bascket__item-delete "></button>
-                            </li>
-                        </ul>
-                        <div class="bascket-total">
-                            <div class="bascket-total__text">
-                                <p>Общая сумма: 30 600 лей</p>
-                                <p>Скидка: -900 лей</p>
-                                <p>Доставка: 60 лей</p>
-                            </div>
-                            <div class="bascket-total__inner">
-                                <p class="bascket-total__result ">
-                                    Итого:
-                                    <span class="bascket-total__price ">29 700 лей</span>
-                                </p>
-                                <a class="bascket-total__link">Перейти в корзину</a>
-                            </div>
+                        <div class="bascket-total__inner">
+                            <p class="bascket-total__result ">
+                                Итого:
+                                <span class="bascket-total__price ">29 700 лей</span>
+                            </p>
+                            <a class="bascket-total__link">Перейти в корзину</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="slider__wrapper ">
-                <div class="slider__box ">
-                    <div class="slider__inner ">
-                        <div class="slider__title ">Больше возможностей с Saint-Gobain</div>
-                        <a class="slider__link " href="# ">Купить</a>
-                    </div>
-                </div>
-                <div class="slider__box ">
-                    <div class="slider__inner ">
-                        <div class="slider__title ">Больше возможностей с Saint-Gobain</div>
-                        <a class="slider__link " href="# ">Купить</a>
-                    </div>
-                </div>
-                <div class="slider__box ">
-                    <div class="slider__inner ">
-                        <div class="slider__title ">Больше возможностей с Saint-Gobain</div>
-                        <a class="slider__link " href="# ">Купить</a>
-                    </div>
-                </div>
-                <div class="slider__box ">
-                    <div class="slider__inner ">
-                        <div class="slider__title ">Больше возможностей с Saint-Gobain</div>
-                        <a class="slider__link " href="# ">Купить</a>
-                    </div>
-                </div>
-                <div class="slider__box ">
-                    <div class="slider__inner ">
-                        <div class="slider__title ">Больше возможностей с Saint-Gobain</div>
-                        <a class="slider__link " href="# ">Купить</a>
-                    </div>
+            <div class="breadcrumbs">
+                <div class="container">
+                    <ul class="breadcrumbs__list">
+                        <li class="breadcrumbs__list-item">
+                            <a href="#">Главная</a>
+                        </li>
+                        <li class="breadcrumbs__list-item">
+                            <a href="#">Контакты</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
     </header>
-
 
     <!-- !---------------------------------------------------------------- HAPPY END HEADER ------------------------------------------------->
 
@@ -533,68 +509,68 @@
     </section>
 
     <!-- !---------------------------------------------------------footer ----------------------------------------------------------->
-    <footer class=" footer ">
-        <div class=" container ">
-            <div class=" footer__inner ">
-                <a class=" footer__logo " href=" # ">
-                    <img class=" footer__logo-img " src=" images/logo.png " alt=" ">
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <a class="footer__logo" href="#">
+                    <img class="footer__logo-img" src="images/logo.png" alt="">
                 </a>
-                <div class=" footer-list ">
-                    <ul class=" footer-list__items ">
-                        <li class=" footer-list__item ">
-                            <a href=" " class=" footer-list__link ">
+                <div class="footer-list">
+                    <ul class="footer-list__items">
+                        <li class="footer-list__item">
+                            <a href="" class="footer-list__link">
                                 Каталог
                             </a>
                         </li>
-                        <li class=" footer-list__item ">
-                            <a href=" " class=" footer-list__link ">
+                        <li class="footer-list__item">
+                            <a href="" class="footer-list__link">
                                 Калькулятор
                             </a>
                         </li>
-                        <li class=" footer-list__item ">
-                            <a href=" " class=" footer-list__link ">
+                        <li class="footer-list__item">
+                            <a href="" class="footer-list__link">
                                 Новости
                             </a>
                         </li>
                     </ul>
-                    <ul class=" footer-list__items ">
-                        <li class=" footer-list__item ">
-                            <a href=" " class=" footer-list__link ">
+                    <ul class="footer-list__items">
+                        <li class="footer-list__item">
+                            <a href="" class="footer-list__link">
                                 О Компании
                             </a>
                         </li>
-                        <li class=" footer-list__item ">
-                            <a href=" " class=" footer-list__link ">
+                        <li class="footer-list__item">
+                            <a href="" class="footer-list__link">
                                 Доставка и Оплата
                             </a>
                         </li>
-                        <li class=" footer-list__item ">
-                            <a href="policy.html" class=" footer-list__link ">
+                        <li class="footer-list__item">
+                            <a href="" class="footer-list__link">
                                 Политика Конфиденциальности
                             </a>
                         </li>
                     </ul>
-                    <ul class=" footer-list__items ">
-                        <li class=" footer-list__item ">
-                            <a href=" " class=" footer-list__link ">
+                    <ul class="footer-list__items">
+                        <li class="footer-list__item">
+                            <a href="" class="footer-list__link">
                                 Контакты
                             </a>
                         </li>
-                        <li class=" footer-list__item ">
-                            <a href=" tel:373 00 000 000 " class=" footer-list__link ">
+                        <li class="footer-list__item">
+                            <a href="tel:373 00 000 000" class="footer-list__link">
                                 373 00 000 000
                             </a>
                         </li>
-                        <li class=" footer-list__item ">
-                            <a href=" mailto:saint-global@info.com " class=" footer-list__link ">
+                        <li class="footer-list__item">
+                            <a href="mailto:saint-global@info.com" class="footer-list__link">
                                 saint-global@info.com
                             </a>
                         </li>
                     </ul>
-                    <ul class=" footer-list__items ">
-                        <li class=" footer-list__item ">
-                            <a href=" " class=" footer-list__link ">
-                                <img class=" footer-list__img " src=" images/facebook.svg " alt=" ">
+                    <ul class="footer-list__items">
+                        <li class="footer-list__item">
+                            <a href="" class="footer-list__link">
+                                <img class="footer-list__img" src="images/facebook.svg" alt="">
                             </a>
                         </li>
                     </ul>
