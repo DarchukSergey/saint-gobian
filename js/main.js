@@ -74,8 +74,8 @@ $(function () {
         dots: false,
         slidesToShow: 5,
         infinite: true,
-        prevArrow: '<button id="prev" type="button" class="spotlight__slider spotlight__slider-btnprev"><img src="../../saint/images/slider-arrow.svg"></img></button>',
-        nextArrow: '<button id="next" type="button" class="spotlight__slider spotlight__slider-btnnext"><img src="../../saint/images/slider-arrow.svg"></img></button>'
+        prevArrow: '<button id="prev" type="button" class="spotlight__slider spotlight__slider-btnprev"><img src="../../../images/slider-arrow.svg"></img></button>',
+        nextArrow: '<button id="next" type="button" class="spotlight__slider spotlight__slider-btnnext"><img src="../../../images/slider-arrow.svg"></img></button>'
     });
 
     $('.header-bottom__btn-img').on('click', function () {
