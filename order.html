@@ -14,15 +14,15 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css" />
     <link rel="stylesheet" href="css/nouislider.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-form-styler@2.0.2/dist/jquery.formstyler.min.css">
-    <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/jquery-form-styler@2.0.2/dist/jquery.formstyler.theme.min.css ">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-form-styler@2.0.2/dist/jquery.formstyler.theme.min.css ">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <header class="header margin-bottom">
+<body>
+    <header class="header">
         <div class="container">
             <div class="header-top">
                 <div class="header-nav">
@@ -56,8 +56,7 @@
                 </div>
                 <div class="header-mode header-mode__items">
                     <div class="header-mode__item item-lang-wrapper">
-                        <select class="header-mode__item mode-item-lang" name="header-mode__item "
-                            id="header-mode__item ">
+                        <select class="header-mode__item mode-item-lang">
                             <option class="header-mode__lang header-mode__lang-ru" value="" selected>RU</option>
                             <option class="header-mode__lang header-mode__lang-ro">RO</option>
                             <option class="header-mode__lang header-mode__lang-en">EN</option>
@@ -71,7 +70,9 @@
             <div class="header-bottom">
                 <nav class="header-bottom__menu">
                     <div class="header-bottom__search">
+                        <!-- <input class="header-bottom__btn" type="submit"> -->
                         <img class="header-bottom__btn-img" src="images/search.svg" alt="">
+                        <!-- </input> -->
                         <input class="header-bottom__input" type="text">
                     </div>
                     <ul class="header-bottom__items">
@@ -137,142 +138,115 @@
                 </ul>
             </div>
             <div class="bascket-wrapper">
-                <div class="bascket-wrapper__inner">
-                    <div class="bascket__container">
-                        <div class="bascket__head">
-                            <p class="bascket__head-title">Корзина</p>
-                            <button class="bascket__head-btn"></button>
+                <div class="bascket__container ">
+                    <div class="bascket__head">
+                        <p class="bascket__head-title">Корзина</p>
+                        <button class="bascket__head-btn"></button>
+                    </div>
+                    <ul id="bascket__items" class="bascket__items ">
+                        <li class="bascket__item ">
+                            <img class="bascket__item-image " src="images/bascket-product.png ">
+                            <div class="bascket__item-text ">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </div>
+                            <div class="bascket__item-select "></div>
+                            <div class="bascket__item-quantity ">
+                                <button class="bascket__minus-btn " type="button " name="button ">
+                                    <img src="images/minus.svg " alt=" " />
+                                </button>
+                                <input type="text " name="name " value="1 ">
+                                <button class="bascket__plus-btn " type="button " name="button ">
+                                    <img src="images/plus.svg " alt=" " />
+                                </button>
+                            </div>
+                            <div class="bascket__item-price ">9900 лей</div>
+
+                            <button class="bascket__item-delete "></button>
+                        </li>
+                        <li class="bascket__item ">
+                            <img class="bascket__item-image " src="images/bascket-product.png ">
+                            <div class="bascket__item-text ">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </div>
+                            <div class="bascket__item-select "></div>
+                            <div class="bascket__item-quantity ">
+                                <button class="bascket__minus-btn " type="button " name="button ">
+                                    <img src="images/minus.svg " alt=" " />
+                                </button>
+                                <input type="text " name="name " value="1 ">
+                                <button class="bascket__plus-btn " type="button " name="button ">
+                                    <img src="images/plus.svg " alt=" " />
+                                </button>
+                            </div>
+                            <div class="bascket__item-price ">9900 лей</div>
+
+                            <button class="bascket__item-delete "></button>
+                        </li>
+                        <li class="bascket__item ">
+                            <img class="bascket__item-image " src="images/bascket-product.png ">
+                            <div class="bascket__item-text ">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </div>
+                            <div class="bascket__item-select "></div>
+                            <div class="bascket__item-quantity ">
+                                <button class="bascket__minus-btn " type="button " name="button ">
+                                    <img src="images/minus.svg " alt=" " />
+                                </button>
+                                <input type="text " name="name " value="1 ">
+                                <button class="bascket__plus-btn " type="button " name="button ">
+                                    <img src="images/plus.svg " alt=" " />
+                                </button>
+                            </div>
+                            <div class="bascket__item-price ">9900 лей</div>
+
+                            <button class="bascket__item-delete "></button>
+                        </li>
+                        <li class="bascket__item ">
+                            <img class="bascket__item-image " src="images/bascket-product.png ">
+                            <div class="bascket__item-text ">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </div>
+                            <div class="bascket__item-select "></div>
+                            <div class="bascket__item-quantity ">
+                                <button class="bascket__minus-btn " type="button " name="button ">
+                                    <img src="images/minus.svg " alt=" " />
+                                </button>
+                                <input type="text " name="name " value="1 ">
+                                <button class="bascket__plus-btn " type="button " name="button ">
+                                    <img src="images/plus.svg " alt=" " />
+                                </button>
+                            </div>
+                            <div class="bascket__item-price ">9900 лей</div>
+
+                            <button class="bascket__item-delete "></button>
+                        </li>
+                    </ul>
+                    <div class="bascket-total">
+                        <div class="bascket-total__text">
+                            <p>Общая сумма: 30 600 лей</p>
+                            <p>Скидка: -900 лей</p>
+                            <p>Доставка: 60 лей</p>
                         </div>
-                        <ul id="bascket__items" class="bascket__items ">
-                            <li class="bascket__item ">
-                                <img class="bascket__item-image " src="images/bascket-product.png ">
-                                <div class="bascket__item-text ">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                    elit.
-                                </div>
-                                <div class="bascket__item-select "></div>
-                                <div class="bascket__item-quantity ">
-                                    <button class="bascket__minus-btn " type="button " name="button ">
-                                        <img src="images/minus.svg " alt=" " />
-                                    </button>
-                                    <input type="text " name="name " value="1 ">
-                                    <button class="bascket__plus-btn " type="button " name="button ">
-                                        <img src="images/plus.svg " alt=" " />
-                                    </button>
-                                </div>
-                                <div class="bascket__item-price ">9900 лей</div>
-
-                                <button class="bascket__item-delete "></button>
-                            </li>
-                            <li class="bascket__item ">
-                                <img class="bascket__item-image " src="images/bascket-product.png ">
-                                <div class="bascket__item-text ">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                    elit.
-                                </div>
-                                <div class="bascket__item-select "></div>
-                                <div class="bascket__item-quantity ">
-                                    <button class="bascket__minus-btn " type="button " name="button ">
-                                        <img src="images/minus.svg " alt=" " />
-                                    </button>
-                                    <input type="text " name="name " value="1 ">
-                                    <button class="bascket__plus-btn " type="button " name="button ">
-                                        <img src="images/plus.svg " alt=" " />
-                                    </button>
-                                </div>
-                                <div class="bascket__item-price ">9900 лей</div>
-
-                                <button class="bascket__item-delete "></button>
-                            </li>
-                            <li class="bascket__item ">
-                                <img class="bascket__item-image " src="images/bascket-product.png ">
-                                <div class="bascket__item-text ">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                    elit.
-                                </div>
-                                <div class="bascket__item-select "></div>
-                                <div class="bascket__item-quantity ">
-                                    <button class="bascket__minus-btn " type="button " name="button ">
-                                        <img src="images/minus.svg " alt=" " />
-                                    </button>
-                                    <input type="text " name="name " value="1 ">
-                                    <button class="bascket__plus-btn " type="button " name="button ">
-                                        <img src="images/plus.svg " alt=" " />
-                                    </button>
-                                </div>
-                                <div class="bascket__item-price ">9900 лей</div>
-
-                                <button class="bascket__item-delete "></button>
-                            </li>
-                            <li class="bascket__item ">
-                                <img class="bascket__item-image " src="images/bascket-product.png ">
-                                <div class="bascket__item-text ">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                    elit.
-                                </div>
-                                <div class="bascket__item-select "></div>
-                                <div class="bascket__item-quantity ">
-                                    <button class="bascket__minus-btn " type="button " name="button ">
-                                        <img src="images/minus.svg " alt=" " />
-                                    </button>
-                                    <input type="text " name="name " value="1 ">
-                                    <button class="bascket__plus-btn " type="button " name="button ">
-                                        <img src="images/plus.svg " alt=" " />
-                                    </button>
-                                </div>
-                                <div class="bascket__item-price ">9900 лей</div>
-
-                                <button class="bascket__item-delete "></button>
-                            </li>
-                        </ul>
-                        <div class="bascket-total">
-                            <div class="bascket-total__text">
-                                <p>Общая сумма: 30 600 лей</p>
-                                <p>Скидка: -900 лей</p>
-                                <p>Доставка: 60 лей</p>
-                            </div>
-                            <div class="bascket-total__inner">
-                                <p class="bascket-total__result ">
-                                    Итого:
-                                    <span class="bascket-total__price ">29 700 лей</span>
-                                </p>
-                                <a class="bascket-total__link">Перейти в корзину</a>
-                            </div>
+                        <div class="bascket-total__inner">
+                            <p class="bascket-total__result ">
+                                Итого:
+                                <span class="bascket-total__price ">29 700 лей</span>
+                            </p>
+                            <a class="bascket-total__link">Перейти в корзину</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="slider__wrapper ">
-                <div class="slider__box ">
-                    <div class="slider__inner ">
-                        <div class="slider__title ">Больше возможностей с Saint-Gobain</div>
-                        <a class="slider__link " href="# ">Купить</a>
-                    </div>
-                </div>
-                <div class="slider__box ">
-                    <div class="slider__inner ">
-                        <div class="slider__title ">Больше возможностей с Saint-Gobain</div>
-                        <a class="slider__link " href="# ">Купить</a>
-                    </div>
-                </div>
-                <div class="slider__box ">
-                    <div class="slider__inner ">
-                        <div class="slider__title ">Больше возможностей с Saint-Gobain</div>
-                        <a class="slider__link " href="# ">Купить</a>
-                    </div>
-                </div>
-                <div class="slider__box ">
-                    <div class="slider__inner ">
-                        <div class="slider__title ">Больше возможностей с Saint-Gobain</div>
-                        <a class="slider__link " href="# ">Купить</a>
-                    </div>
-                </div>
-                <div class="slider__box ">
-                    <div class="slider__inner ">
-                        <div class="slider__title ">Больше возможностей с Saint-Gobain</div>
-                        <a class="slider__link " href="# ">Купить</a>
-                    </div>
+            <div class="breadcrumbs">
+                <div class="container">
+                    <ul class="breadcrumbs__list">
+                        <li class="breadcrumbs__list-item">
+                            <a href="#">Главная</a>
+                        </li>
+                        <li class="breadcrumbs__list-item">
+                            <a href="#">Контакты</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
     </header>
-
 
     <!-- !---------------------------------------------------------------- HAPPY END HEADER ------------------------------------------------->
 
@@ -284,14 +258,10 @@
                         <span>1</span> Информация
                     </h2>
                     <form class="order-info__form">
-                        <input class="order__form-input order-info__form-name" type="text" name="" id=""
-                            placeholder="Имя">
-                        <input class="order__form-input order-info__form-city" type="text" name="" id=""
-                            placeholder="Город">
-                        <input class="order__form-input order-info__form-email" type="email" name="" id=""
-                            placeholder="E-mail">
-                        <input class="order__form-input order-info__form-tel" type="tel" name="" id=""
-                            placeholder="Телефон">
+                        <input class="order__form-input order-info__form-name" type="text" name="" id="" placeholder="Имя">
+                        <input class="order__form-input order-info__form-city" type="text" name="" id="" placeholder="Город">
+                        <input class="order__form-input order-info__form-email" type="email" name="" id="" placeholder="E-mail">
+                        <input class="order__form-input order-info__form-tel" type="tel" name="" id="" placeholder="Телефон">
                     </form>
                 </div>
                 <div class="order-block order-adress">
@@ -312,10 +282,8 @@
                             <option value="Orhey">Оргеев</option>
                         </select>
 
-                        <input class="order__form-input order-adress__form-adress" type="text" name="" id=""
-                            placeholder="Адрес">
-                        <input class="order__form-input order-adress__form-zip" type="text" name=" " id=" "
-                            placeholder=" Почтовый индекс ">
+                        <input class="order__form-input order-adress__form-adress" type="text" name="" id="" placeholder="Адрес">
+                        <input class="order__form-input order-adress__form-zip" type="text" name=" " id=" " placeholder=" Почтовый индекс ">
                     </form>
                 </div>
                 <div class="order-block order-delivery ">
@@ -344,7 +312,7 @@
                             <div class=" order-delivery__item-price ">
                                 Бесплатно
                             </div>
-                        </li>
+                        </li>                  
                     </ul>
                 </div>
                 <div class="order-block order-payment ">
@@ -353,8 +321,8 @@
                     </h2>
                     <ul class=" order-payment__items ">
                         <li class=" order-payment__item ">
-                            <h4 class=" order__item-title ">Оплата на сайте</h4>
-                            <p class=" order__item-text ">Банковской картой</p>
+                        <h4 class=" order__item-title ">Оплата на сайте</h4>
+                        <p class=" order__item-text ">Банковской картой</p>
                         </li>
                         <li class=" order-payment__item ">
                             <h4 class=" order__item-title ">При получении</h4>
@@ -368,21 +336,20 @@
                         <li class=" order-payment__item ">
                             <h4 class=" order__item-title ">Рассрочка</h4>
                             <p class=" order__item-text ">До 6 месяцев</p>
-                        </li>
-                        <li class=" order-payment__item ">
-                            <h4 class=" order__item-title ">Кредит</h4>
-                            <p class=" order__item-text ">До 1 000 000 лей</p>
-                        </li>
-                        <li class=" order-payment__item ">
-                            <h4 class=" order__item-title ">По счету для юрлиц</h4>
-                        </li>
+                            </li>
+                            <li class=" order-payment__item ">
+                                <h4 class=" order__item-title ">Кредит</h4>
+                                <p class=" order__item-text ">До 1 000 000 лей</p>
+                            </li>
+                            <li class=" order-payment__item ">
+                                <h4 class=" order__item-title ">По счету для юрлиц</h4>
+                            </li>
                     </ul>
-
+                   
                 </div>
                 <div class="order-confirm ">
                     <input id="confirm-check " name="confirm-check " type="checkbox" class="confirm-check-input " />
-                    <label id=" " class="confirm-check-label " for="confirm-check ">Перезвоните мне для подтверждения
-                        заказа</label>
+                    <label id=" " class="confirm-check-label " for="confirm-check ">Перезвоните мне  для подтверждения заказа</label>
                 </div>
             </div>
         </section>
@@ -452,7 +419,7 @@
                     <ul class=" footer-list__items ">
                         <li class=" footer-list__item ">
                             <a href=" " class=" footer-list__link ">
-                                <img class=" footer-list__img " src=" images/facebook.svg " alt=" ">
+                                <div class="footer-list__img"></div>
                             </a>
                         </li>
                     </ul>

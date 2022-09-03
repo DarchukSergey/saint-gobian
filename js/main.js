@@ -48,8 +48,8 @@ $(function () {
         dots: false,
         slidesToShow: 6,
         infinite: true,
-        prevArrow: "<button id='prev' type='button' class='banner-section__slider slider-btnprev'><img src='../images/bascket-product.png'></img></button>",
-        nextArrow: '<button id="next" type="button" class="banner-section__slider slider-btnnext"><img src="../../images/slider-arrow.svg"></img></button>'
+        prevArrow: "<button id='prev' type='button' class='banner-section__slider slider-btnprev'><span></span></button>",
+        nextArrow: '<button id="next" type="button" class="banner-section__slider slider-btnnext"><span></span></button>'
     });
 
 
@@ -74,8 +74,8 @@ $(function () {
         dots: false,
         slidesToShow: 5,
         infinite: true,
-        prevArrow: '<button id="prev" type="button" class="spotlight__slider spotlight__slider-btnprev"><img src="../../../images/slider-arrow.svg"></img></button>',
-        nextArrow: '<button id="next" type="button" class="spotlight__slider spotlight__slider-btnnext"><img src="../../../images/slider-arrow.svg"></img></button>'
+        prevArrow: '<button id="prev" type="button" class="spotlight__slider spotlight__slider-btnprev"><span></span></button>',
+        nextArrow: '<button id="next" type="button" class="spotlight__slider spotlight__slider-btnnext"><span></span></button>'
     });
 
     $('.header-bottom__btn-img').on('click', function () {
